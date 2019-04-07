@@ -19,9 +19,9 @@
   "name": "@inabagumi/animare-api",
   "private": true,
   "scripts": {
-    "dev": "node -r ts-node/register $(which micro-dev) src/members",
+    "dev": "node -r ts-node/register $(which micro-dev) src",
     "format": "prettier --ignore-path .gitignore --write \"./**/*.{md,ts,yml}\"",
-    "start": "node -r ts-node/register $(which micro) src/members"
+    "start": "node -r ts-node/register $(which micro) src"
   },
   "version": "1.0.0"
 }
