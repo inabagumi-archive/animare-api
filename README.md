@@ -1,0 +1,5 @@
+# AniMare API
+
+## LICENSE
+
+[MIT](LICENSE)

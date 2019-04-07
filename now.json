@@ -1,0 +1,11 @@
+{
+  "alias": [
+    "api.animare.cafe"
+  ],
+  "env": {
+    "YOUTUBE_TOKEN": "@animare-api-youtube-api-key"
+  },
+  "name": "animare-api",
+  "public": true,
+  "version": 1
+}

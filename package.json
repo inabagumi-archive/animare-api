@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "fs-extra": "^7.0.1",
+    "googleapis": "^39.2.0",
+    "js-yaml": "^3.13.1",
+    "micro": "^9.3.3"
+  },
+  "description": "",
+  "devDependencies": {
+    "@types/fs-extra": "^5.0.5",
+    "@types/js-yaml": "^3.12.1",
+    "@types/micro": "^7.3.3",
+    "micro-dev": "^3.0.0",
+    "prettier": "^1.16.4",
+    "ts-node": "^8.0.3",
+    "typescript": "^3.4.2"
+  },
+  "license": "MIT",
+  "name": "@inabagumi/animare-api",
+  "private": true,
+  "scripts": {
+    "dev": "node -r ts-node/register $(which micro-dev) src/members",
+    "format": "prettier --ignore-path .gitignore --write \"./**/*.{md,ts,yml}\"",
+    "start": "node -r ts-node/register $(which micro) src/members"
+  },
+  "version": "1.0.0"
+}
