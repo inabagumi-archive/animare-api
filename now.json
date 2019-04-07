@@ -7,5 +7,8 @@
   },
   "name": "animare-api",
   "public": true,
+  "regions": [
+    "hnd1"
+  ],
   "version": 1
 }
