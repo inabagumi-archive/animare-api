@@ -26,14 +26,14 @@ type Live = {
 }
 
 const getMember = async (locale: string, id: string): Promise<Member> => {
-  const path = resolve(__dirname, '..', '..', locale, 'members', `${id}.yml`)
+  const path = resolve(__dirname, '..', locale, 'members', `${id}.yml`)
   const buffer = await readFile(path)
 
   return yaml.load(buffer.toString())
 }
 
 const getMembers = async (locale: string): Promise<Member[]> => {
-  const dir = resolve(__dirname, '..', '..', locale, 'members')
+  const dir = resolve(__dirname, '..', locale, 'members')
   const files = await readdir(dir)
   const promises = files.map(file => {
     const path = join(dir, file)
@@ -83,18 +83,27 @@ const getLives = async (locale: string, id: string): Promise<Live[] | null> => {
   return null
 }
 
+const getArticles = async (locale: string): Promise<any> => {
+  const path = resolve(__dirname, '..', locale, 'articles.yml')
+  const buffer = await readFile(path)
+
+  return yaml.load(buffer.toString())
+}
+
 const handler: RequestHandler = async (req, res) => {
   res.setHeader('access-control-allow-origin', '*')
 
   const path = req.url || '/'
-  const match = path.match(/^\/(en|ja)\/members(?:\/([^/]+)(?:\/lives)?)?$/)
+  const match = path.match(/^\/(en|ja)\/(?:articles|members(?:\/([^/]+)(?:\/lives)?)?)$/)
 
   if (match) {
     const data = match[2]
       ? match[0].endsWith('/lives')
         ? await getLives(match[1], match[2]).catch(() => null)
         : await getMember(match[1], match[2]).catch(() => null)
-      : await getMembers(match[1]).catch(() => null)
+      : match[0].endsWith('/articles')
+        ? await getArticles(match[1]).catch(() => null)
+        : await getMembers(match[1]).catch(() => null)
 
     if (data) {
       res.setHeader('cache-control', 'max-age=600, public, s-maxage=300')
