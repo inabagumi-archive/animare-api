@@ -84,6 +84,8 @@ const getLives = async (locale: string, id: string): Promise<Live[] | null> => {
 }
 
 const handler: RequestHandler = async (req, res) => {
+  res.setHeader('access-control-allow-origin', '*')
+
   const path = req.url || '/'
   const match = path.match(/^\/(en|ja)\/members(?:\/([^/]+)(?:\/lives)?)?$/)
 
