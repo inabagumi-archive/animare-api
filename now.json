@@ -3,7 +3,7 @@
     "api.animare.cafe"
   ],
   "env": {
-    "YOUTUBE_TOKEN": "@animare-api-youtube-api-key"
+    "YOUTUBE_API_KEY": "@animare-api-youtube-api-key"
   },
   "name": "animare-api",
   "public": true,
