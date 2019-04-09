@@ -15,17 +15,12 @@ const handler: AugmentedRequestHandler = async (req, res) => {
     return readFile(path, 'utf8')
   })
   const values = await Promise.all(promises)
+  const data = values
+    .map(value => yaml.load(value))
+    .filter(member => !member.unlisted)
 
-  if (values.length > 0) {
-    res.setHeader('cache-control', 'max-age=600, public, s-maxage=300')
-    send(res, 200, values.map(value => yaml.load(value)))
-
-    return
-  }
-
-  send(res, 404, {
-    message: 'Not Found'
-  })
+  res.setHeader('cache-control', 'max-age=600, public, s-maxage=300')
+  send(res, 200, data)
 }
 
 export default handler
