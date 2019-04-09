@@ -2,13 +2,31 @@
   "alias": [
     "api.animare.cafe"
   ],
+  "builds": [
+    {
+      "config": {
+        "includeFiles": [
+          "../en/**/*.yml",
+          "../ja/**/*.yml"
+        ]
+      },
+      "src": "./src/index.ts",
+      "use": "@now/node"
+    }
+  ],
   "env": {
     "YOUTUBE_API_KEY": "@animare-api-youtube-api-key"
   },
   "name": "animare-api",
   "public": true,
+  "routes": [
+    {
+      "dest": "/src/index.ts",
+      "src": "/.*"
+    }
+  ],
   "regions": [
     "hnd1"
   ],
-  "version": 1
+  "version": 2
 }
