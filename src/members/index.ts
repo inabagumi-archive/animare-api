@@ -9,7 +9,7 @@ const handler: AugmentedRequestHandler = async (req, res) => {
 
   const { locale } = req.params
   const dir = resolve(__dirname, '..', '..', locale, 'members')
-  const files = await readdir(dir)
+  const files: string[] = await readdir(dir).catch(() => [])
   const promises = files.map(file => {
     const path = join(dir, file)
     return readFile(path, 'utf8')
