@@ -8,6 +8,7 @@
     "module": "commonjs",
     "noImplicitAny": true,
     "noImplicitThis": true,
+    "outDir": "./build/",
     "strict": true,
     "target": "es2018",
   }

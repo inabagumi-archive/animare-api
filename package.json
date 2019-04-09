@@ -18,12 +18,14 @@
     "typescript": "^3.4.2"
   },
   "license": "MIT",
+  "main": "./build",
   "name": "@inabagumi/animare-api",
   "private": true,
   "scripts": {
+    "build": "tsc",
     "dev": "node -r ts-node/register $(which micro-dev) src",
     "format": "prettier --ignore-path .gitignore --write \"./**/*.{md,ts,yml}\"",
-    "start": "node -r ts-node/register $(which micro) src"
+    "start": "micro"
   },
   "version": "1.0.0"
 }
