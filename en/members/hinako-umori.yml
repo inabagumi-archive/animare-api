@@ -1,4 +1,4 @@
-avatar: animare-cafe/avatar/hinako-umori.png
+avatar: https://res.cloudinary.com/dkdl7ze6r/f_auto,h_512,w_512/animare-cafe/avatar/hinako-umori.png
 color: '#fce4ec'
 description: Hinako Umori's Profile
 id: hinako-umori
@@ -7,4 +7,4 @@ links:
   youtube: https://www.youtube.com/channel/UChqYnJlFxlBi6DfRz6jRenQ
 mainVisual: https://res.cloudinary.com/dkdl7ze6r/f_auto/animare-cafe/main-visual/hinako-umori.jpg
 name: Hinako Umori
-picture: animare-cafe/picture/hinako-umori.png
+picture: https://res.cloudinary.com/dkdl7ze6r/f_auto/animare-cafe/picture/hinako-umori.png

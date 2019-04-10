@@ -1,4 +1,4 @@
-avatar: animare-cafe/avatar/ichika-souya.png
+avatar: https://res.cloudinary.com/dkdl7ze6r/f_auto,h_512,w_512/animare-cafe/avatar/ichika-souya.png
 color: '#b3e5fc'
 description: 宗谷 いちかの紹介
 id: ichika-souya
@@ -7,4 +7,4 @@ links:
   youtube: https://www.youtube.com/channel/UC2kyQhzGOB-JPgcQX9OMgEw
 mainVisual: https://res.cloudinary.com/dkdl7ze6r/f_auto/animare-cafe/main-visual/ichika-souya.jpg
 name: 宗谷 いちか
-picture: animare-cafe/picture/ichika-souya.png
+picture: https://res.cloudinary.com/dkdl7ze6r/f_auto/animare-cafe/picture/ichika-souya.png

@@ -1,4 +1,4 @@
-avatar: animare-cafe/avatar/haneru-inaba.png
+avatar: https://res.cloudinary.com/dkdl7ze6r/f_auto,h_512,w_512/animare-cafe/avatar/haneru-inaba.png
 color: '#ffecb3'
 description: 因幡 はねるの紹介
 id: haneru-inaba
@@ -7,4 +7,4 @@ links:
   youtube: https://www.youtube.com/channel/UC0Owc36U9lOyi9Gx9Ic-4qg
 mainVisual: https://res.cloudinary.com/dkdl7ze6r/f_auto/animare-cafe/main-visual/haneru-inaba.jpg
 name: 因幡 はねる
-picture: animare-cafe/picture/haneru-inaba.png
+picture: https://res.cloudinary.com/dkdl7ze6r/f_auto/animare-cafe/picture/haneru-inaba.png
