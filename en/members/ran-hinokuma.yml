@@ -1,4 +1,4 @@
-avatar: animare-cafe/avatar/ran-hinokuma.png
+avatar: https://res.cloudinary.com/dkdl7ze6r/f_auto,h_512,w_512/animare-cafe/avatar/ran-hinokuma.png
 color: '#c8e6c9'
 description: Ran Hinokuma's Profile
 id: ran-hinokuma
@@ -7,4 +7,4 @@ links:
   youtube: https://www.youtube.com/channel/UCRvpMpzAXBRKJQuk-8-Sdvg
 mainVisual: https://res.cloudinary.com/dkdl7ze6r/f_auto/animare-cafe/main-visual/ran-hinokuma.jpg
 name: Ran Hinokuma
-picture: animare-cafe/picture/ran-hinokuma.png
+picture: https://res.cloudinary.com/dkdl7ze6r/f_auto/animare-cafe/picture/ran-hinokuma.png

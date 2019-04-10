@@ -1,4 +1,4 @@
-avatar: animare-cafe/avatar/kuromu-inari.png
+avatar: https://res.cloudinary.com/dkdl7ze6r/f_auto,h_512,w_512/animare-cafe/avatar/kuromu-inari.png
 color: '#ffccbc'
 description: Kuromu Inari's Profile
 id: kuromu-inari
@@ -7,5 +7,5 @@ links:
   youtube: https://www.youtube.com/channel/UCGiFzwdasSAHILrx-DB1pVQ
 mainVisual: https://res.cloudinary.com/dkdl7ze6r/f_auto/animare-cafe/main-visual/kuromu-inari.jpg
 name: Kuromu Inari
-picture: animare-cafe/picture/kuromu-inari.png
+picture: https://res.cloudinary.com/dkdl7ze6r/f_auto/animare-cafe/picture/kuromu-inari.png
 unlisted: true
