@@ -17,6 +17,9 @@
   "env": {
     "YOUTUBE_API_KEY": "@animare-api-youtube-api-key"
   },
+  "github": {
+    "silent": true
+  },
   "name": "animare-api",
   "public": true,
   "routes": [
