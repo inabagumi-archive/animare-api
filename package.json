@@ -15,7 +15,7 @@
     "micro-dev": "^3.0.0",
     "prettier": "^1.17.1",
     "ts-node": "^8.2.0",
-    "typescript": "^3.4.5"
+    "typescript": "^3.5.1"
   },
   "license": "MIT",
   "main": "./build",
